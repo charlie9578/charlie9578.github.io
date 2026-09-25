@@ -1,152 +1,30 @@
-<!DOCTYPE html>
-<html>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial;
-}
-
-.header {
-  text-align: center;
-  padding: 32px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 1600px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 800px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-</style>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Maps and visual experiments by Charlie Plumley, from Glasgow and Kyiv to renewable energy and imaginary worlds.">
+  <title>Maps — Charlie Plumley</title>
+  <link rel="stylesheet" href="css/site.css">
+</head>
 <body>
-
-<body style="background-color:orange;"></body>
-
-<h1 style="text-align:center;font-family:gill sans, sans-serif"><a style="color:black; text-decoration: none;" href="index.html">Charlie's cool plots</a></h1>
-
-<!-- Header -->
-<div class="header">  
-  <p>Click a plot to access the interactive version where available.</p>
-  <p>Map plots use <a href="https://www.openstreetmap.org">OpenStreetMap</a> data.</p>
-</div>
-
-<!-- Photo Grid -->
-
-<div class="row"> 
-  <div class="column">
-    <a href="gallery/UK-Renewables.html"><img src="gallery/UK-Renewables.jpg" style="width:100%"></a>
-    <a href="gallery/UK-WindAndSolar.html"><img src="gallery/UK-WindAndSolar.jpg" style="width:100%"></a>
-    <a href="gallery/BritishIsles_Munros.html"><img src="gallery/BritishIsles_Munros.jpg" style="width:100%"></a>
-    <a href="gallery/BritIsles_LightHouses.html"><img src="gallery/BritIsles_LightHouses.jpg" style="width:100%"></a>
-    <a href="gallery/BritIsles_Munros.html"><img src="gallery/BritIsles_Munros.jpg" style="width:100%"></a>
-    <a href="gallery/EalingPubs.html"><img src="gallery/EalingPubs.jpg" style="width:100%"></a>
-    <a href="gallery/London_Stations.html"><img src="gallery/London_Stations.jpg" style="width:100%"></a>
-  </div>
-  
-  <div class="column">
-    <a href="gallery/ShetlandsHistoric.html"><img src="gallery/ShetlandsHistoric.jpg" style="width:100%"></a>
-    <a href="gallery/GuernseyBeaches.html"><img src="gallery/GuernseyBeaches.jpg" style="width:100%"></a>
-    <a href="gallery/WelshCastles.html"><img src="gallery/WelshCastles.jpg" style="width:100%"></a>
-    <a href="gallery/WhiteleeWindFarm.html"><img src="gallery/WhiteleeWindFarm.jpg" style="width:100%"></a>
-    <a href="gallery/GoldenPostbox.html"><img src="gallery/GoldenPostbox.jpg" style="width:100%"></a>    
-    <a href="gallery/Rivers_UK_red.html"><img src="gallery/Rivers_UK_red.jpg" style="width:100%"></a>
-    <a href="gallery/Rivers_UK_colour.html"><img src="gallery/Rivers_UK_colour.jpg" style="width:100%"></a>
-  </div> 
-   
-  <div class="column">
-    <img src="gallery/Knight.jpg" style="width:100%">
-    <img src="gallery/Robin (character).jpg" style="width:100%">
-    <img src="gallery/Wikipedia.jpg" style="width:100%">
-    <img src="gallery/COVID-19.jpg" style="width:100%">
-    <img src="gallery/Minoan civilization.jpg" style="width:100%">
-    <img src="gallery/Henry VIII.jpg" style="width:100%">
-    <img src="gallery/Yuri on Ice.jpg" style="width:100%">
-  </div>
-  
-  <div class="column">
-    <a href="gallery/Glasgow_subway.html"><img src="gallery/Glasgow_subway.jpg" style="width:100%"></a>
-    <a href="gallery/London_subway.html"><img src="gallery/London_subway.jpg" style="width:100%"></a>
-    <a href="gallery/London_metro.html"><img src="gallery/London_metro.jpg" style="width:100%"></a>
-    <a href="gallery/Moscow_subway.html"><img src="gallery/Moscow_subway.jpg" style="width:100%"></a>
-    <a href="gallery/Paris_subway.html"><img src="gallery/Paris_subway.jpg" style="width:100%"></a>
-    <a href="gallery/NewYork_metro.html"><img src="gallery/NewYork_metro.jpg" style="width:100%"></a>
-    <a href="gallery/subways.html"><img src="gallery/subways.jpg" style="width:100%"></a>
-  </div>
-
-  <div class="column">
-    <a href="gallery/Map01-Points-WTGs.html"><img src="gallery/Map01-Points-WTGs.jpg" style="width:100%"></a>
-    <a href="gallery/Map02-Lines-LondonArray.html"><img src="gallery/Map02-Lines-LondonArray.jpg" style="width:100%"></a>
-    <a href="gallery/Map03-Polygons-OffshoreWindFarms.html"><img src="gallery/Map03-Polygons-OffshoreWindFarms.jpg" style="width:100%"></a>
-    <img src="gallery/Map04-Bad-BingChat.jpg" style="width:100%"></a>
-    <img src="gallery/Map05-Analog-Scratch.jpg" style="width:100%"></a>
-    <img src="gallery/Map06-Asia-PvPandas.jpg" style="width:100%">
-    <a href="gallery/Map07-Navigation-Fader.html"><img src="gallery/Map07-Navigation-Fader.jpg" style="width:100%"></a>
-    <a href="gallery/Map08-Africa-Hydro.html"><img src="gallery/Map08-Africa-Hydro.jpg" style="width:100%"></a>
-    <img src="gallery/Map09-Hexagons.jpg" style="width:100%">
-    <a href="gallery/Map10-NorthAmerica-USA-Renewables.html"><img src="gallery/Map10-NorthAmerica-USA-Renewables.jpg" style="width:100%"></a>
-    <a href="gallery/Map11-Retro-Covid19.html"><img src="gallery/Map11-Retro-Covid19.jpg" style="width:100%"></a>
-    <a href="gallery/Map12-SouthAmerica-RapaNui-SolarPV.html"><img src="gallery/Map12-SouthAmerica-RapaNui-SolarPV.jpg" style="width:100%"></a>
-    <a href="gallery/Map13-Choropleth-Renewables.html"><img src="gallery/Map13-Choropleth-Renewables.jpg" style="width:100%"></a>
-    <img src="gallery/Map14-Europe-Heartstopper.jpg" style="width:100%">
-    <img src="gallery/Map15-OSM-Pokemon.jpg" style="width:100%">
-    <img src="gallery/Map16-Oceania-Australia-NationalMap.jpg" style="width:100%">
-    <a href="gallery/Map17-Flows-Subways.html"><img src="gallery/Map17-Flows-Subways.jpg" style="width:100%"></a>
-    <a href="gallery/Map18-Atmosphere-Venus.html"><img src="gallery/Map18-Atmosphere-Venus.jpg" style="width:100%"></a>
-    <img src="gallery/Map19-5min-Kyiv.jpg" style="width:100%">
-    <img src="gallery/Map20-Outdoors-RunTheBlades.jpg" style="width:100%">
-    <a href="gallery/Map21_raster_wakes.html"><img src="gallery/Map21-raster-wakes.jpg" style="width:100%"></a>
-    <a href="gallery/Map22-North-ice.html"><img src="gallery/Map22-North-ice.jpg" style="width:100%"></a>
-    <img src="gallery/Map23-3D-WTGs.jpg" style="width:100%">
-    <img src="gallery/Map24-BW-Guernsey.jpg" style="width:100%">
-    <img src="gallery/Map25-Antartica-GoldenHinde.jpg" style="width:100%">
-    <a href="gallery/Map26-Minimal-PompeiDoom.html"><img src="gallery/Map26-Minimal-PompeiDoom.jpg" style="width:100%"></a>
-    <img src="gallery/Map27-Dots-VolcanoFire.jpg" style="width:100%">
-    <a href="gallery/Map28-MapChart-EuropeElectric.html"><img src="gallery/Map28-MapChart-EuropeElectric.jpg" style="width:100%"></a>
-    <img src="gallery/Map29-Population-EuropeCartogram.jpg" style="width:100%">
-    <a href="gallery/Map30-Favourite-WindSolarGlobe.html"><img src="gallery/Map30-Favourite-WindSolarGlobe.jpg" style="width:100%"></a>
-  </div>
-
-  <div class="column">
-    <a href="gallery/2401-points.html"><img src="gallery/2401-points.jpg" style="width:100%"></a>
-    <a href="gallery/2402-lines.html"><img src="gallery/2402-lines.jpg" style="width:100%"></a>
-    <a href="gallery/2403-polygons.html"><img src="gallery/2403-polygons.jpg" style="width:100%"></a>
-    <a href="gallery/2406-raster.html"><img src="gallery/2406-raster.jpg" style="width:100%"></a>
-    <a href="gallery/2416-choropleth.html"><img src="gallery/2416-choropleth.png" style="width:100%"></a>
-  </div>
-
-
-</div>
-
+  <a class="skip" href="#main">Skip to maps</a>
+  <header class="masthead"><div class="shell"><a class="brand" href="index.html">Charlie Plumley</a><nav aria-label="Main navigation"><a href="index.html">Studio</a><a href="innovator.html" aria-current="page">Maps</a><a href="scientist.html">Renewables</a></nav></div></header>
+  <main id="main">
+    <section class="hero"><div class="shell hero-grid"><div><p class="eyebrow">Maps and visual experiments</p><h1>Places, plotted.</h1><p class="lead">I make maps to explore places, stories and energy systems. Some are useful, some are experiments, and a few exist because an idea made me curious.</p></div><figure class="hero-art"><img src="gallery/Map19-5min-Kyiv.jpg" alt="Colourful map of an area of Kyiv drawn as a five-minute map" width="1220" height="1220"></figure></div></section>
+    <section class="section"><div class="shell"><div class="section-intro"><div><p class="eyebrow">Start here</p><h2>A few favourites</h2></div><p>Open a card to explore the interactive version where there is one, or see the full-size image.</p></div>
+      <div class="card-grid">
+        <a class="card" href="gallery/Glasgow_subway.html"><img src="gallery/Glasgow_subway.jpg" alt="Glasgow Subway route on an aerial map" loading="lazy"><div class="copy"><span class="tag">Glasgow · transit</span><h3>The Subway circle</h3><p>Fifteen stations, one wonderfully simple loop around the city.</p><span class="action">Explore the map →</span></div></a>
+        <a class="card" href="gallery/UK-Renewables.html"><img src="gallery/UK-Renewables.jpg" alt="Map of UK renewable energy projects shown as coloured circles" loading="lazy"><div class="copy"><span class="tag">Energy · data</span><h3>Renewables across the UK</h3><p>Different technologies and scales, all sharing the same geography.</p><span class="action">Explore the map →</span></div></a>
+        <a class="card" href="gallery/Map19-5min-Kyiv.jpg"><img src="gallery/Map19-5min-Kyiv.jpg" alt="Illustrated circular map of part of Kyiv" loading="lazy"><div class="copy"><span class="tag">Ukraine · illustration</span><h3>Five minutes in Kyiv</h3><p>A small, colourful study of a place I care about.</p><span class="action">View the full image →</span></div></a>
+        <a class="card" href="gallery/Map15-OSM-Pokemon.jpg"><img src="gallery/Map15-OSM-Pokemon.jpg" alt="Pokémon Go screen over map geometry" loading="lazy"><div class="copy"><span class="tag">Play · OpenStreetMap</span><h3>Mapping for Pokémon Go</h3><p>Where everyday geography meets the game I play while exploring it.</p><span class="action">View the full image →</span></div></a>
+        <a class="card" href="gallery/Map14-Europe-Heartstopper.jpg"><img src="gallery/Map14-Europe-Heartstopper.jpg" alt="Maps of locations from Heartstopper alongside comic panels" loading="lazy"><div class="copy"><span class="tag">Stories · places</span><h3>Heartstopper places</h3><p>Following a story through the real places on its pages.</p><span class="action">View the full image →</span></div></a>
+        <a class="card" href="gallery/Map30-Favourite-WindSolarGlobe.html"><img src="gallery/Map30-Favourite-WindSolarGlobe.jpg" alt="Globe visualisation centred on Europe and Africa" loading="lazy"><div class="copy"><span class="tag">Earth · energy</span><h3>Wind and solar globe</h3><p>Looking at renewable energy at a very different scale.</p><span class="action">Explore the map →</span></div></a>
+      </div>
+      <a class="text-link" href="maps-archive.html">Browse the full map archive →</a>
+    </div></section>
+    <section class="section"><div class="shell"><p class="eyebrow">Where the data comes from</p><h2>Open maps, open questions</h2><p class="lead">Many of these experiments use <a href="https://www.openstreetmap.org/">OpenStreetMap</a>. The archive also includes wind farms, mountains, pubs, lighthouses, transport, weather and the occasional odd idea.</p></div></section>
+  </main>
+  <footer class="footer"><div class="shell"><span>Charlie Plumley</span><a href="index.html">Back to the studio ↑</a></div></footer>
 </body>
 </html>
